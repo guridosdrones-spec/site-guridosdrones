@@ -1,0 +1,107 @@
+:root{
+  --ink:#0E1A14; --ink-2:#17281F; --ink-3:#1F3427;
+  --texto:#F3F7F1; --fraco:#B9C8BB;
+  --acento:#63B23C; --marca:#E31B23;
+  --borda:rgba(255,255,255,.10);
+  --max:1060px; --raio:16px;
+  --display:"Outfit","Segoe UI",system-ui,sans-serif;
+  --corpo:"Asap","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--texto);font:400 1.05rem/1.6 var(--corpo);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.env{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);line-height:1.15}
+
+.topo{position:sticky;top:0;z-index:10;background:rgba(14,26,20,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--borda)}
+.topo .env{display:flex;align-items:center;justify-content:space-between;height:60px}
+.marca{display:flex;align-items:center;gap:10px;font:800 1.15rem var(--display)}
+.marca img{width:30px;height:30px}
+.marca b{color:var(--acento)}
+.menu{display:flex;gap:22px;font-size:.95rem;color:var(--fraco)}
+.menu a:hover{color:var(--texto)}
+
+.hero{padding:96px 0 72px;background:radial-gradient(900px 400px at 80% -10%,rgba(99,178,60,.18),transparent),var(--ink)}
+.olho{font:600 .8rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--acento);margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;max-width:14em}
+.hero h1 em{font-style:normal;color:var(--acento)}
+.hero p{margin-top:18px;max-width:34em;color:var(--fraco);font-size:1.15rem}
+.botoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font:600 1rem var(--display);border:1px solid var(--borda);transition:.15s}
+.btn--cheio{background:var(--acento);color:#0E1A14;border-color:var(--acento)}
+.btn--cheio:hover{filter:brightness(1.1)}
+.btn:not(.btn--cheio):hover{background:var(--ink-2)}
+
+section{padding:72px 0}
+section h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:8px}
+.sub{color:var(--fraco);max-width:38em;margin-bottom:36px}
+
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.cartao{background:var(--ink-2);border:1px solid var(--borda);border-radius:var(--raio);padding:26px;display:flex;flex-direction:column;gap:12px}
+.cartao h3{font-size:1.35rem}
+.cartao p{color:var(--fraco);font-size:1rem}
+.selo{align-self:flex-start;font:600 .75rem var(--display);letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:rgba(99,178,60,.15);color:var(--acento)}
+.selo--breve{background:rgba(255,255,255,.08);color:var(--fraco)}
+.cartao ul{list-style:none;padding:0;display:grid;gap:6px;color:var(--fraco);font-size:.97rem}
+.cartao li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--acento);margin-right:10px}
+.parte{border-top:1px solid var(--borda);padding-top:14px;display:grid;gap:10px}
+.parte h4{font:700 1.05rem var(--display)}
+.parte h4 small{font:500 .85rem var(--corpo);color:var(--fraco);margin-left:6px}
+.links{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:14px;font:600 .95rem var(--display)}
+.links a{color:var(--acento)}
+.links a:hover{text-decoration:underline}
+
+.faixa{background:var(--ink-2);border-block:1px solid var(--borda)}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.duas--rev>:first-child{order:2}
+.painel{background:var(--ink-3);border:1px solid var(--borda);border-radius:var(--raio);min-height:240px;display:grid;place-items:center;color:var(--fraco);font:600 .9rem var(--display);text-align:center;padding:20px}
+
+.contato{text-align:center}
+.contato .sub{margin-inline:auto}
+.contato .botoes{justify-content:center}
+footer{padding:30px 0;border-top:1px solid var(--borda);color:var(--fraco);font-size:.9rem;text-align:center}
+
+@media(max-width:760px){
+  .menu{display:none}
+  .duas{grid-template-columns:1fr}
+  .duas--rev>:first-child{order:0}
+  .hero{padding:64px 0 48px}
+  section{padding:52px 0}
+}
+
+.pagina{padding:64px 0 24px;background:radial-gradient(800px 320px at 80% -20%,rgba(99,178,60,.14),transparent),var(--ink)}
+.pagina h1{font-size:clamp(2rem,5vw,3rem);font-weight:800}
+.pagina .sub{margin:14px 0 0}
+.menu a.ativo{color:var(--acento)}
+.atalhos .cartao{transition:.15s}
+.atalhos a.cartao:hover{border-color:var(--acento);transform:translateY(-2px)}
+.atalhos .links{margin-top:auto}
+
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.meta span{font:600 .82rem var(--display);padding:5px 11px;border-radius:8px;background:var(--ink-3);border:1px solid var(--borda);color:var(--texto)}
+
+.menu{gap:18px}
+
+.tabela-rolagem{overflow-x:auto;border:1px solid var(--borda);border-radius:var(--raio)}
+.tabela{width:100%;border-collapse:collapse;min-width:560px;background:var(--ink-2)}
+.tabela th,.tabela td{padding:13px 16px;text-align:center;border-bottom:1px solid var(--borda)}
+.tabela thead th{font:700 .85rem var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--fraco);background:var(--ink-3)}
+.tabela tbody th{text-align:left;font-weight:600}
+.tabela tbody th small{display:block;font:400 .82rem var(--corpo);color:var(--fraco);margin-top:2px}
+.tabela tr:last-child th,.tabela tr:last-child td{border-bottom:0}
+.tabela td.s{color:var(--acento);font-weight:700;font-size:1.15rem}
+.tabela td.n{color:rgba(255,255,255,.25)}
+.nota{margin-top:16px;color:var(--fraco);font-size:.95rem}
+
+.liberacoes{border:1px solid var(--borda);border-radius:10px;background:var(--ink-3)}
+.liberacoes summary{cursor:pointer;padding:11px 14px;font:600 .92rem var(--display);color:var(--acento);list-style:none}
+.liberacoes summary::-webkit-details-marker{display:none}
+.liberacoes summary::before{content:"+ ";}
+.liberacoes[open] summary::before{content:"– ";}
+.liberacoes>*:not(summary){margin:0 14px 14px}
+.tabela--compacta{min-width:430px;font-size:.92rem}
+.tabela--compacta th,.tabela--compacta td{padding:9px 10px}
+
+.produto .foto{min-height:180px;border-radius:12px;background:var(--ink-3);border:1px dashed var(--borda);display:grid;place-items:center;color:var(--fraco);font:600 .85rem var(--display);text-align:center;padding:12px}
+.preco{font:800 1.6rem var(--display)!important;color:var(--texto)!important}
