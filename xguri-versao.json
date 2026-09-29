@@ -1,0 +1,19 @@
+{
+  "versao": "1.1.4",
+  "pacotes": [
+    {
+      "label": "Instalador completo",
+      "name": "XGuri_Setup_1.1.4.exe",
+      "sha256": "5a97788734ea3ec2ab25413b9d955cb35f81e27ef1a7124e9f1d6a677742a66b",
+      "bytes": 489861280,
+      "url": "https://github.com/guridosdrones-spec/xguri-site/releases/download/v1.1.4/XGuri_Setup_1.1.4.exe"
+    },
+    {
+      "label": "Atualização para quem já tem o XGuri",
+      "name": "XGuri_Atualizacao_1.1.4.exe",
+      "sha256": "b1e821e48b65aea309c83cfd76abff12ff3672f90a3313b6b0fc501789e6977d",
+      "bytes": 249728813,
+      "url": "https://github.com/guridosdrones-spec/xguri-site/releases/download/v1.1.4/XGuri_Atualizacao_1.1.4.exe"
+    }
+  ]
+}
