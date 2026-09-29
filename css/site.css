@@ -49,8 +49,8 @@ section h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:8px}
 .parte h4{font:700 1.05rem var(--display)}
 .parte h4 small{font:500 .85rem var(--corpo);color:var(--fraco);margin-left:6px}
 .links{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:14px;font:600 .95rem var(--display)}
-.links a{color:var(--acento)}
-.links a:hover{text-decoration:underline}
+.links a:not(.btn){color:var(--acento)}
+.links a:not(.btn):hover{text-decoration:underline}
 
 .faixa{background:var(--ink-2);border-block:1px solid var(--borda)}
 .duas{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
