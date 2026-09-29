@@ -105,3 +105,15 @@ footer{padding:30px 0;border-top:1px solid var(--borda);color:var(--fraco);font-
 
 .produto .foto{min-height:180px;border-radius:12px;background:var(--ink-3);border:1px dashed var(--borda);display:grid;place-items:center;color:var(--fraco);font:600 .85rem var(--display);text-align:center;padding:12px}
 .preco{font:800 1.6rem var(--display)!important;color:var(--texto)!important}
+
+/* Mais espaço entre produtos e entre computador e celular. */
+.grade--programas{gap:36px;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.grade--programas>.cartao{padding:32px;gap:20px;min-width:0}
+.grade--programas .parte{margin-top:12px;padding-top:28px;gap:22px}
+.grade--programas .parte+.parte{margin-top:24px;padding-top:36px}
+.grade--programas .parte ul{gap:12px}
+.grade--programas .links{padding-top:4px}
+@media(max-width:760px){
+  .grade--programas{grid-template-columns:minmax(0,1fr);gap:32px}
+  .grade--programas>.cartao{padding:24px}
+}
