@@ -472,9 +472,9 @@ window.IDIOMAS = {
     "DGuri Portátil · Download and compatible drones",
     "DGuri Portátil · Descarga y drones compatibles"
   ],
-  "DGuri Portátil · Android · versão 0.13.10": [
-    "DGuri Portátil · Android · version 0.13.10",
-    "DGuri Portátil · Android · versión 0.13.10"
+  "DGuri Portátil · Android · versão 0.13.11": [
+    "DGuri Portátil · Android · version 0.13.11",
+    "DGuri Portátil · Android · versión 0.13.11"
   ],
   "Baixe o DGuri Portátil": [
     "Download DGuri Portátil",
@@ -496,9 +496,9 @@ window.IDIOMAS = {
     ", whenever needed.",
     ", cuando lo necesites."
   ],
-  "Versão 0.13.10 · 97 MB · Android 8 ou superior · dispositivo de 64 bits": [
-    "Version 0.13.10 · 97 MB · Android 8 or later · 64-bit device",
-    "Versión 0.13.10 · 97 MB · Android 8 o superior · dispositivo de 64 bits"
+  "Versão 0.13.11 · 97 MB · Android 8 ou superior · dispositivo de 64 bits": [
+    "Version 0.13.11 · 97 MB · Android 8 or later · 64-bit device",
+    "Versión 0.13.11 · 97 MB · Android 8 o superior · dispositivo de 64 bits"
   ],
   "O download já vem com": [
     "The download includes",
