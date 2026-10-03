@@ -707,5 +707,9 @@ window.IDIOMAS = {
   "Download do aplicativo": [
     "App download",
     "Descarga de la aplicación"
+  ],
+  "Simulador de drone": [
+    "Drone simulator",
+    "Simulador de drones"
   ]
 };
